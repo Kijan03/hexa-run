@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "Hexa Run",
+    "slug": "hexa-run",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "plugins": [
+      [
+        "expo-location",
+        { "locationWhenInUsePermission": "주변 영토를 점령하려면 위치 권한이 필요합니다." }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.example.hexarun",
+      "config": { "googleMapsApiKey": "YOUR_GOOGLE_MAPS_API_KEY" }
+    },
+    "android": {
+      "package": "com.example.hexarun",
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"],
+      "config": { "googleMaps": { "apiKey": "YOUR_GOOGLE_MAPS_API_KEY" } }
+    }
+  }
+}
